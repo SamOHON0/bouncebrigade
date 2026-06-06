@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Fabricated test fixture for PartyOps. Not a real site - keep out of indexes.
+Sitemap: https://bouncebrigade.test/sitemap.xml

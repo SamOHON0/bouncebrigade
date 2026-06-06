@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact &amp; Book | Bounce Brigade Castle Hire (TEST)</title>
+<meta name="description" content="Check availability and book a bouncy castle with Bounce Brigade across County Marlow. Call, WhatsApp or use the enquiry form. Fabricated test site."/>
+<meta name="robots" content="noindex, nofollow"/>
+<link rel="canonical" href="https://bouncebrigade.test/contact"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏰</text></svg>"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@800;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<script src="partyops-config.js"></script>
+</head>
+<body>
+<div class="testbar">🧪 TEST SITE · live PartyOps booking widget below · bookings land in the PartyOps dashboard</div>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><span class="nav-logo-badge">🏰</span>Bounce Brigade</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="castles.html">Castles</a></li>
+      <li><a href="areas.html">Areas</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a class="nav-cta" href="contact.html">Book Now</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu(this)" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Get in touch</span>
+    <h1>Check your date &amp; book 📅</h1>
+    <p class="lead">Pick a castle, choose your dates and book in real time below. Or just call or WhatsApp Jamie directly.</p>
+  </div>
+</header>
+
+<section class="block">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="form-card">
+        <div id="po-widget"></div>
+        <p style="font-size:13px;color:var(--mid);font-weight:600;margin-top:14px;text-align:center">
+          This booking widget is served by PartyOps via <code>widget.js</code>. Pick a castle, dates and pay, and the booking lands in the PartyOps dashboard.
+        </p>
+        <script>
+          (function(){
+            var cfg = window.PARTYOPS || {};
+            if(!cfg.origin || !cfg.businessId){
+              document.getElementById('po-widget').innerHTML =
+                '<p style="padding:24px;text-align:center;color:var(--mid);font-weight:600">PartyOps is not configured. Set origin and businessId in partyops-config.js.</p>';
+              return;
+            }
+            var s = document.createElement('script');
+            s.src = cfg.origin.replace(/\/$/, '') + '/widget.js';
+            s.setAttribute('data-business-id', cfg.businessId);
+            s.setAttribute('data-target', '#po-widget');
+            s.onerror = function(){
+              document.getElementById('po-widget').innerHTML =
+                '<p style="padding:24px;text-align:center;color:var(--mid);font-weight:600">Could not reach PartyOps at <code>'+cfg.origin+'</code>. Start it, then reload to book.</p>';
+            };
+            document.body.appendChild(s);
+          })();
+        </script>
+      </div>
+      <div>
+        <ul class="contact-list">
+          <li><span class="ico">📞</span><div>Call us<br/><a href="tel:+35315550147">01 555 0147</a></div></li>
+          <li><span class="ico">💬</span><div>WhatsApp<br/><a href="https://wa.me/35315550147">Message Jamie</a></div></li>
+          <li><span class="ico">✉️</span><div>Email<br/><a href="mailto:hello@bouncebrigade.test">hello@bouncebrigade.test</a></div></li>
+          <li><span class="ico">📍</span><div>Based in<br/>Marlow Town, County Marlow</div></li>
+          <li><span class="ico">🕒</span><div>Hours<br/>Mon–Sun, 8am–8pm</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo"><span class="footer-logo-badge">🏰</span>Bounce Brigade</div>
+      <p>Run by Jamie. Bouncy castle and party hire delivered, set up and collected free across County Marlow. This is a fabricated test site.</p>
+      <div class="social-row"><a class="social-btn" href="https://instagram.com/bouncebrigade.test" aria-label="Instagram">📸</a><a class="social-btn" href="https://wa.me/35315550147" aria-label="WhatsApp">💬</a></div>
+    </div>
+    <div class="footer-col"><h4>Explore</h4><a href="index.html">Home</a><a href="castles.html">Our Castles</a><a href="areas.html">Areas We Cover</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Get in touch</h4><a href="tel:+35315550147">01 555 0147</a><a href="mailto:hello@bouncebrigade.test">hello@bouncebrigade.test</a><a href="contact.html">Book now</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Bounce Brigade Castle Hire (fictional) · Test fixture for PartyOps · Not a real business</div>
+</footer>
+<a class="wa-float" href="https://wa.me/35315550147" aria-label="WhatsApp">💬</a>
+<script src="app.js"></script>
+</body>
+</html>
