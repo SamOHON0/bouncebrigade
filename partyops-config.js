@@ -8,7 +8,9 @@
  * run partyops-seed-bouncebrigade.sql in the PartyOps Supabase SQL editor.
  */
 window.PARTYOPS = {
-  origin: "https://partyops.vercel.app",
-  businessId: "40286761-83cb-4706-90dc-3158327e3f32",
+  // Testing branch deployment + staging Supabase business (Test Castles Co).
+  // Revert to https://partyops.app + the prod business id after testing.
+  origin: "https://partyops-git-testing-sam-2702s-projects.vercel.app",
+  businessId: "5657734f-27b0-4467-8471-7edc6fc62855",
   fallbackCatalogue: "catalogue.json"
 };
